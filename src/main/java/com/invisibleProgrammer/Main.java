@@ -17,7 +17,7 @@ import static java.lang.Class.forName;
 public class Main {
   public static void main(String[] args)
   {
-    String aocDay = "3";
+    String aocDay = "4";
     String sessionId = readSessionIdFromEnv();
 
     Stream<String> input = getInput(aocDay, sessionId);
