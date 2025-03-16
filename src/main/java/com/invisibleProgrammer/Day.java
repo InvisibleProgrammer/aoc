@@ -1,12 +1,14 @@
 package com.invisibleProgrammer;
 
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public abstract class Day {
-  Stream<String> input;
+  List<String> input;
 
   public Day(Stream<String> input) {
-    this.input = input;
+    this.input = input.collect(Collectors.toList());
   }
 
   int partI() {
